@@ -18,11 +18,11 @@ urlpatterns = [
         name='logout'),
     path(
         route='signup/', 
-        view=views.signup_view , 
+        view=views.SignupView.as_view(), 
         name='signup'),
     path(
         route='me/profile/', 
-        view=views.update_profile, 
+        view=views.UpdateProfileView.as_view(), 
         name='update_profile'),
 
     # Posts
